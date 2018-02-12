@@ -1,0 +1,100 @@
+.container-fluid{
+	padding: 0px;
+}
+
+
+nav{
+	background : rgb(202, 33, 30); 
+	height: 50px;
+	padding-right: 150px;
+	padding-left: 100px;
+}
+nav ul{
+	list-style-type: none;
+	float: right;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+
+}
+
+.allign-center{
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+nav li{
+	display: inline;
+	margin-left:80px;
+	font-size: 20px;
+	color: black;
+	color: white;
+
+}
+
+nav h2{
+	float: left;
+	color: white;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.top-img{
+	background: url(../imagenes/top-img.jpeg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: bottom;
+	background-attachment: fixed;
+	background-size: cover;
+
+	width: 100%;
+	height: 500px;
+
+}
+
+
+#aboutMe h1{
+	margin: 0 auto;
+	text-align: center;
+	font-family: 'Arvo', serif;
+	text-decoration: underline;
+	text-decoration-color: red;
+
+}
+
+
+#skills h1{
+	margin: 0 auto;
+	text-align: center;
+	font-family: 'Arvo', serif;
+	color:white;
+	background: #ca283d;
+
+}
+
+#aboutMe .row{
+	justify-content: center;
+	margin : 0px;
+}
+#skills .row{
+	justify-content: center;
+	margin : 0px;
+	padding: 0px 350px;
+	background:  #f2f2f2;
+	padding-top: 20px;
+}
+
+.center-content{
+	justify-content: center;
+	text-align: center;
+
+}
+
+.skills-img{
+	max-height:200px;
+	width: auto;
+	height: auto;
+	margin-bottom: 50px;
+}

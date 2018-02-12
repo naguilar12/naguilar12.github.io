@@ -1,123 +1,93 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title></title>
-     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!DOCTYPE html>
+	<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<!-- Bootstrap CSS -->
+		<link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-</head>
-<body>
-<div class="container">
-  <div class="row">
-    <div class="col-sm-8">
-      <h1>Web Dev Tweets</h1>
-      <input type="text" 
-        id="inputSearch" 
-        placeholder="Search by name"/>
-      <button class="btn btn-primary" 
-        id="btnSearch"
-        >Search</button>
-    </div>
-  </div>
-  <!-- row -->
+		<link rel="stylesheet"  type="text/css" href="CSS/style.css">
+		
+		<title>
+			Nicolás Aguilar
+		</title>
+	</head>
+	<body>
 
-  
+		<div class="container-fluid">	
 
-  <div id="tweets" class="row">
-    
-  </div>
-  <!-- row -->
-
-  <div class="row">
-    <div class="col-sm-8">
-      <div>Made with love by John</div>
-    </div>
-  </div>  
-  <!-- row -->
-
-</div>
-
-<script
-  src="http://code.jquery.com/jquery-3.3.1.min.js"
-  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-  crossorigin="anonymous"></script>
-
-<script type="text/javascript">
-/* global $ */
-"use strict";
-
-function update(data, filter) {
-  $("#tweets").empty();
-  data
-    .filter(function (d) {
-      return d.user.screen_name.startsWith(filter);
-    })
-    .forEach(function (d) {
-      var photo = $("<img>")
-        .addClass("photo")
-        .attr("src", d.user.profile_image_url)
-        .attr("alt", d.user.screen_name + " photo");
-        
-      var tweet = $("<div class='col-sm-4'>")
-        .append($("<div>")
-          .addClass("name")
-          .text(d.user.screen_name)
-        )
-        .append(photo);
-      $("#tweets")        
-        .append(tweet);
-    });
-
-}
-
-function callback(data) {
-  console.log("callback");
-  console.log(data);
-
-  
-  update(data, "");
-
-  $("#btnSearch")
-    .on("click", function (){
-      update(data, $("#inputSearch").val());
-    });
-}
-
-$.getJSON("./JSON/tweets.json", callback);
-
- 
+			<div class="top-img">
+			</div>
 
 
+			<nav>
+				<h2>Nicolás Aguilar</h2>
+				<ul>
+					<li>Home</li>
+					<li>About Me</li>
+					<li>Skills</li>
+					<li>Projects</li>
+				</ul>
+				
+			</nav>
+			<br/>
 
 
+			<section id="aboutMe">
+
+				<h1>
+					About Me
+				</h1>
+				<br/>
+				<br/>
+				<br/>
+				<div class="row">
+					<div class="col-md-3"><p>I'm Nicolas Aguilar, adas sdokedpkf dfsdfd asdlkasdksa dsa;daslfewn m Nicolas Aguilar, adas sdokedpkf dfsdfd asdlkasdksa dsa;daslfewn  m Nicolas Aguilar, adas sdokedpkf dfsdfd asdlkasdksa dsa;daslfewn  m Nicolas Aguilar, adas sdokedpkf dfsdfd asdlkasdksa dsa;daslfewn m Nicolas Aguilar, adas sdokedpkf dfsdfd asdlkasdksa dsa;daslfewn  m Nicolas Aguilar, adas sdokedpkf dfsdfd asdlkasdksa dsa;daslfewn  m Nicolas Aguilar, adas sdokedpkf dfsdfd asdlkasdksa dsa;daslfewn </p></div>
+
+					<div class="col-md-3"><p>I'm Nicolas Aguilar, adas sdokedpkf dfsdfd asdlkasdksa dsa;daslfewn m Nicolas Aguilar, adas sdokedpkf dfsdfd asdlkasdksa dsa;daslfewn  m Nicolas Aguilar, adas sdokedpkf dfsdfd asdlkasdksa dsa;daslfewn  m Nicolas Aguilar, adas sdokedpkf dfsdfd asdlkasdksa dsa;daslfewn m Nicolas Aguilar, adas sdokedpkf dfsdfd asdlkasdksa dsa;daslfewn  m Nicolas Aguilar, adas sdokedpkf dfsdfd asdlkasdksa dsa;daslfewn  m Nicolas Aguilar, adas sdokedpkf dfsdfd asdlkasdksa dsa;daslfewn </p></div>				
+				</div>
+
+			</section>
+
+			<section id="skills">
+				<h1>
+					Skills
+				</h1>
+
+				<div class="row">
+					<div class="col-md-4 center-content">
+						<img src="imagenes/java.png" class="skills-img">						
+					</div>					
+
+					<div class="col-md-4 center-content" >
+						<img src="imagenes/javascript.png" class="skills-img">						
+					</div>					
 
 
+					<div class="col-md-4 center-content" >
+						<img src="imagenes/css-html.png" class="skills-img">						
+					</div>	
 
 
+					<div class="col-md-4 center-content" >
+						<img src="imagenes/sql.png" class="skills-img">						
+					</div>	
+
+					<div class="col-md-4 center-content" >
+						<img src="imagenes/rails.png" class="skills-img">						
+					</div>					
+				</div>
+				
+			</section>
+
+			
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</script>
-
-
-
-</body>
-</html>
+			<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+		</div>
+	</body>
+	</html>
