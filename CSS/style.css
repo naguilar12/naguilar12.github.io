@@ -8,6 +8,7 @@ nav{
 	height: 50px;
 	padding-right: 150px;
 	padding-left: 100px;
+	overflow: hidden;	
 }
 nav ul{
 	list-style-type: none;
@@ -81,7 +82,6 @@ nav h2{
 #skills .row{
 	justify-content: center;
 	margin : 0px;
-	padding: 0px 350px;
 	background:  #f2f2f2;
 	padding-top: 20px;
 }
@@ -97,4 +97,69 @@ nav h2{
 	width: auto;
 	height: auto;
 	margin-bottom: 50px;
+}
+
+
+.exp{
+	display: inline-block;
+	border-radius: 50px;
+	background:  #ffe6e6;
+	width: 300px;
+	height: 200px;
+	transform: translateY(20%);
+
+}
+
+.exp p {
+	padding: 25px;
+}
+
+.timeline .row{
+	justify-content: center;
+	padding-bottom: : 5000px;
+	margin: 0;
+}
+
+footer{
+	height: 20px;
+	background: red;	
+}
+
+.contact-img{
+	height: 75px;
+}
+
+#contact-me .row{
+	padding: 0px 0px;  
+	margin: 0px;
+}
+
+.end{
+	background: #cb2028;
+	padding-bottom: 25px;
+}
+
+#contact-me h1{
+	text-align: center;
+	color: white;
+}
+
+@media screen and (max-width: 699px)
+{
+	#nav-list{
+		display: none;
+	}
+
+	nav{
+		padding-right: 0px;
+		padding-left: 20px;
+	}
+
+	nav h2{
+	float: left;
+	color: white;
+	position: relative;
+	top: 50%;
+	transform: translateY(-45%);
+}
 }
