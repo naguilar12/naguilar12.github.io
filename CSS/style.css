@@ -42,7 +42,7 @@ nav h2{
 	transform: translateY(-50%);
 }
 
-.madera{
+.fondo-blanco{
 	background: url(../imagenes/puerta.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;

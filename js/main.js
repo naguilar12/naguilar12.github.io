@@ -1,8 +1,12 @@
 "use strict";
+
+//Se espera a que se cargue el documento
 $(document).ready(function() {
+	//Se esconden elementos que se animan despues
 	$(".perfil").hide();
 	$(".fa").hide();
 
+	//Se anima .exp si el mouse se para encima de el
 	$(".exp").mousemove(function(){
 		$(".exp")
 		.css("background-color","#af2424")
@@ -12,15 +16,15 @@ $(document).ready(function() {
 		.css("color","black");
 	});
 
+	//Se anima .exp si el mouse se mueve afuera de el
 	$(".exp").mouseout(function(){
 		$(this)
 		.css("background-color","#af2424")
 		.css("color","white");
 	});
 
-	console.log($("#skills").position().top);
+	//Animaciones que varian dependiendo de la posicion del scroll
 	$(window).scroll(function(){
-		console.log($(this).scrollTop());
 		if($(this).scrollTop()>185)
 		{
 			$(".perfil").fadeIn();
