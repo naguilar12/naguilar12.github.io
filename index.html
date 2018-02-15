@@ -11,6 +11,7 @@
 		<link rel="stylesheet"  type="text/css" href="CSS/style.css">
 
 		<link rel="shortcut icon" href="imagenes/red-star.png"/>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 		
 		<title>
@@ -20,18 +21,17 @@
 	<body>
 
 		<div class="container-fluid">	
-
-			<div class="top-img">
+			<div id="home"class="top-img">
 			</div>
 
 
 			<nav class= "sticky-top">
 				<h2>Nicolás Aguilar</h2>
 				<ul id="nav-list">
-					<li>Home</li>
-					<li>About Me</li>
-					<li>Skills</li>
-					<li>Projects</li>
+					<li><a href="#home">Home</a></li>
+					<li><a href="#aboutMe">About Me</a></li>
+					<li><a href="#skills">Skills</a></li>
+					<li><a href="#studies">Studies and experience</a></li>
 				</ul>
 				
 			</nav>
@@ -40,18 +40,30 @@
 
 			<section id="aboutMe">
 
-				<h1>
-					About Me
-				</h1>
+				
 
 				<br/>
 				<br/>
-				<br/>
-				<div class="row">
-					<div class="col-md-3"><p>I'm Nicolas Aguilar, adas sdokedpkf dfsdfd asdlkasdksa dsa;daslfewn m Nicolas Aguilar, adas sdokedpkf dfsdfd asdlkasdksa dsa;daslfewn  m Nicolas Aguilar, adas sdokedpkf dfsdfd asdlkasdksa dsa;daslfewn  m Nicolas Aguilar, adas sdokedpkf dfsdfd asdlkasdksa dsa;daslfewn m Nicolas Aguilar, adas sdokedpkf dfsdfd asdlkasdksa dsa;daslfewn  m Nicolas Aguilar, adas sdokedpkf dfsdfd asdlkasdksa dsa;daslfewn  m Nicolas Aguilar, adas sdokedpkf dfsdfd asdlkasdksa dsa;daslfewn </p></div>
+				<div id="about-div" class="row">
+					<div class="col-md-2" style="text-align: center">
+						<img src="imagenes/perfil.jpg" class="perfil">
+					</div>
+					<div class="col-md-1">	</div>
 
-					<div class="col-md-3"><p>I'm Nicolas Aguilar, adas sdokedpkf dfsdfd asdlkasdksa dsa;daslfewn m Nicolas Aguilar, adas sdokedpkf dfsdfd asdlkasdksa dsa;daslfewn  m Nicolas Aguilar, adas sdokedpkf dfsdfd asdlkasdksa dsa;daslfewn  m Nicolas Aguilar, adas sdokedpkf dfsdfd asdlkasdksa dsa;daslfewn m Nicolas Aguilar, adas sdokedpkf dfsdfd asdlkasdksa dsa;daslfewn  m Nicolas Aguilar, adas sdokedpkf dfsdfd asdlkasdksa dsa;daslfewn  m Nicolas Aguilar, adas sdokedpkf dfsdfd asdlkasdksa dsa;daslfewn </p></div>				
+					<div class="col-md-3" style="text-align: center">
+						<h1>
+							About Me
+						</h1>
+						<br>
+						<p>I'm a 20 year old student at Universidad de los Andes, currently I'm persuing two majors, in systems and computing engineering and industrial engineering. </p> 
+						<p>
+							This is my third year at Universidad de los Andes, until now I've learn a lot of things and I'm looking forward to learn much more.
+						</p>
+					</div>
 				</div>
+
+				<br>
+				<br>
 
 			</section>
 
@@ -60,126 +72,176 @@
 					Skills
 				</h1>
 
-				<div class="row">
-					<div class="col-md-2 center-content">
-					</div>
-					<div class="col-md-2 center-content">
-						<img src="imagenes/java.png" class="skills-img">						
-					</div>		
+				<div class="madera">	
 
-					<div class="col-md-1">	
-					</div>			
-
-
-
-					<div class="col-md-2 center-content" >
-						<img src="imagenes/javascript.png" class="skills-img">						
-					</div>		
-
-					<div class="col-md-1">	
-					</div>
-
-					<div class="col-md-2 center-content" >
-						<img src="imagenes/css-html.png" class="skills-img">						
-					</div>
+					<div class="row">
+						<div class="col-md-2 center-content">
+						</div>
+						<div class="col-md-2 center-content">
+							<img src="imagenes/java.png" class="skills-img">
+							<h4>Java</h4>					
+							<div>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star"></span>
 
 
+							</div>
+						</div>
 
-					<div class="col-md-2 center-content">
-					</div>
+						<div class="col-md-1">	
+						</div>			
 
 
-					<div class="col-md-2 center-content" >
-						<img src="imagenes/sql.png" class="skills-img">						
-					</div>	
 
-					<div class="col-md-1">	
-					</div>
+						<div class="col-md-2 center-content" >
+							<img src="imagenes/javascript.png" class="skills-img">
+							<h4>JavaScript</h4>					
+							<div>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star"></span>
+								<span class="fa fa-star"></span>
 
-					<div class="col-md-2 center-content" >
-						<img src="imagenes/rails.png" class="skills-img">						
-					</div>					
+
+							</div>					
+						</div>		
+
+						<div class="col-md-1">	
+						</div>
+
+						<div class="col-md-2 center-content" >
+							<img src="imagenes/css-html.png" class="skills-img">
+							<h4>HTML - CSS</h4>					
+							<div>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star"></span>
+								<span class="fa fa-star"></span>
+
+							</div>						
+						</div>
+
+
+
+						<div class="col-md-2 center-content">
+						</div>
+
+
+						<div class="col-md-2 center-content" >
+							<img src="imagenes/sql.png" class="skills-img">	
+							<h4>SQL</h4>					
+							<div>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star"></span>
+								<span class="fa fa-star"></span>
+
+
+							</div>					
+						</div>	
+
+						<div class="col-md-1">	
+						</div>
+
+						<div class="col-md-2 center-content" >
+							<img src="imagenes/rails.png" class="skills-img">
+							<h4>Rails</h4>					
+							<div>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star"></span>
+								<span class="fa fa-star"></span>
+							</div>					
+						</div>					
+					</div><!--row-->
 				</div>
-				
+
 			</section>
 
-			<section class="timeline">
+			<section id="studies" >
+				<h1>
+					Studies and experience
+				</h1>
+				<br>	
 				<div class="row">
 
-					<div class="col-md-4 center-content" >
-						<div class="exp">
-							<p class= "allign-center">
-								ASD asdasd asdAsdas das d f dss gerg re  gre ge ge rg fdgdf gdf gdf gdf gfd gdf gfd gfd gfd gfd gf dgfd g dfgfdg fdg fdg dfg fd gdf gdf g dfg fdg fdg df
-							</p>
-						</div>
+					<div class="col-md-3 exp">
+						<img src="imagenes/ib.png">
+						<p>
+						In 2015 I graduated from Colombo Gales School in Bogotá in the international baccalaureate program.</p>
+
 					</div>
 
-					<div class="col-md-4 center-content" >
-						<div class="exp">
-							<p class= "allign-center">
-								ASD asdasd asdAsdas das d f dss gerg re  gre ge ge rg fdgdf gdf gdf gdf gfd gdf gfd gfd gfd gfd gf dgfd g dfgfdg fdg fdg dfg fd gdf gdf g dfg fdg fdg df
-							</p>
-						</div>
-					</div>
-
-					<div class="col-md-4 center-content" >
-						<div class="exp">
-							<p class= "allign-center">
-								ASD asdasd asdAsdas das d f dss gerg re  gre ge ge rg fdgdf gdf gdf gdf gfd gdf gfd gfd gfd gfd gf dgfd g dfgfdg fdg fdg dfg fd gdf gdf g dfg fdg fdg df
-							</p>
-						</div>
+					<div class="col-md-1">
 					</div>
 
 
-					<div class="col-md-4 center-content" >
-						<div class="exp">
-							<p class= "allign-center">
-								ASD asdasd asdAsdas das d f dss gerg re  gre ge ge rg fdgdf gdf gdf gdf gfd gdf gfd gfd gfd gfd gf dgfd g dfgfdg fdg fdg dfg fd gdf gdf g dfg fdg fdg df
-							</p>
-						</div>
+					<div class="col-md-3 exp">
+						<img src="imagenes/andes.png">
+						<p>	
+						Later on 2015 I started my studies at Universidad de los Andes</p>
 					</div>
-
-					<div class="col-md-4 center-content" >
-						<div class="exp">
-							<p class= "allign-center">
-								ASD asdasd asdAsdas das d f dss gerg re  gre ge ge rg fdgdf gdf gdf gdf gfd gdf gfd gfd gfd gfd gf dgfd g dfgfdg fdg fdg dfg fd gdf gdf g dfg fdg fdg df
-							</p>
-						</div>
-					</div>
-
-
 				</div>
 
-			</section>
 
-			<br>
-			<br>
-			<br>
-			<div class="end">
-				<section id="contact-me">
-					<h1>Contact Me</h1>
-					<br/>
-					<div class="row center-content">
-						<div class="col-md-4 col-sm-2">
-							<a href="https://twitter.com/Nicolas_Agui" target="_blank"><img class="contact-img" src="imagenes/twitter.png">	</a>
-						</div>	
-						<div class="col-md-4 col-sm-2">
-							<a href="https://github.com/naguilar12" target="_blank">	
-								<img class="contact-img" src="imagenes/github.png">	
-							</a>
-						</div>	
-						<div class="col-md-4 col-sm-2">	
-							<img class="contact-img" src="imagenes/mail.png">	
+				<div class="row" style="margin-top: 1px;">
+					<div class="col-md-3 exp">
+						<img src="imagenes/andes.png">
+						<p>
+						In 2017 I worked as teaching assistant in OOPI(Object oriented programming) class, solving students doubts on Java basics and reviewing class exercices.</p>
 
-						</div>	
-					</div>	
+					</div>
+
+					<div class="col-md-1">
+					</div>
+
+					<div class="col-md-3 exp">
+						<img src="imagenes/andes.png">
+						<p>
+							This year I'm working as teaching assistant in OOPII class, solving students doubts on sort algorithms, binary trees and java.
+
+						</div>
+
+
+					</div>
+
 				</section>
-			</div>
 
-			<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-		</div>
-		<!--container-fluid-->
-	</body>
-	</html>
+				<br>
+				<br>
+				<div class="end">
+					<section id="contact-me">
+						<h1>Contact Me</h1>
+						<br/>
+						<div class="row center-content">
+							<div class="col-md-4 col-sm-2">
+								<a href="https://twitter.com/Nicolas_Agui" target="_blank"><img class="contact-img" src="imagenes/twitter.png">	</a>
+							</div>	
+							<div class="col-md-4 col-sm-2">
+								<a href="https://github.com/naguilar12" target="_blank">	
+									<img class="contact-img" src="imagenes/github.png">	
+								</a>
+							</div>	
+							<div class="col-md-4 col-sm-2">	
+								<a href="mailto:nicoaguileon@hotmail.com">
+									<img class="contact-img" src="imagenes/mail.png">	
+								</a>
+
+							</div>	
+						</div>	
+					</section>
+				</div>
+			</div>
+			<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+			<script src="js/main.js"></script>
+			<!--container-fluid-->
+		</body>
+		</html>	
