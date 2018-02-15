@@ -5,12 +5,17 @@ $(document).ready(function() {
 
 	$(".exp").mousemove(function(){
 		$(".exp")
-			.css("background-color","#af2424")
-			.css("color","white");
+		.css("background-color","#af2424")
+		.css("color","white");
 		$(this)
-			.css("background-color","#d3d3d1")
-			.css("color","black");
+		.css("background-color","#d3d3d1")
+		.css("color","black");
+	});
 
+	$(".exp").mouseout(function(){
+		$(this)
+		.css("background-color","#af2424")
+		.css("color","white");
 	});
 
 	console.log($("#skills").position().top);
