@@ -3,12 +3,6 @@ $(document).ready(function() {
 	$(".perfil").hide();
 	$(".fa").hide();
 
-
-/*	$("h1").mousemove(function(){
-		$("#about-div").fadeIn();
-	});*/
-
-
 	$(".exp").mousemove(function(){
 		$(".exp")
 			.css("background-color","#af2424")
@@ -17,7 +11,7 @@ $(document).ready(function() {
 			.css("background-color","#d3d3d1")
 			.css("color","black");
 
-	})
+	});
 
 	console.log($("#skills").position().top);
 	$(window).scroll(function(){
@@ -25,10 +19,6 @@ $(document).ready(function() {
 		if($(this).scrollTop()>185)
 		{
 			$(".perfil").fadeIn();
-			// console.log($(this).scrollTop()+"SCROLL");
-			// console.log($("#skills").position().top - $("#skills").height());
-			// console.log($("#skills").offset().top - $("#skills").height());	
-			// $("#skills").fadeIn();
 		}
 		else{
 			$(".perfil").fadeOut();
@@ -41,7 +31,5 @@ $(document).ready(function() {
 			$(".fa").fadeOut();
 
 		}
-
-
-	})
+	});
 });
