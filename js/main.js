@@ -5,6 +5,10 @@ $(document).ready(function() {
 	//Se esconden elementos que se animan despues
 	$(".perfil").hide();
 	$(".fa").hide();
+	$(".sticky-top").hide();
+	$("#header-pic").hide();
+	$(".sticky-top").hide();
+	$("#header-pic").fadeIn(1000);
 
 	//Se anima .exp si el mouse se para encima de el
 	$(".exp").mousemove(function(){
@@ -32,6 +36,15 @@ $(document).ready(function() {
 		else{
 			$(".perfil").fadeOut();
 		}
+
+		if($(this).scrollTop()>700){
+			$(".sticky-top").fadeIn();
+		}
+
+		if($(this).scrollTop()<400){
+			$(".sticky-top").fadeOut();
+		}
+
 
 		if($(this).scrollTop()>650	){
 			$(".fa").fadeIn();
